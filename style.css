@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&family=Yuji+Syuku&display=swap');
+
+:root {
+
+    --vermelho-principal: #EC2C2C;
+    --branco-sedundario: #FFFFFF;
+    --preto-terciario: #000000;
+    --laranja-pastel: #f18943;
+
+    --fonte-primaria: 'Yuji Syuku', sans-serif;
+    --fonte-secundaria: 'Maven Pro', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--laranja-pastel);
+}
+
+.cabecalho {
+    background-color: var(--vermelho-principal);
+    text-align: center;
+    padding: 0.5rem;
+    border-radius: 3px;
+    border: 5px solid var(--preto-terciario);
+}
+
+.cabecalho__titulo {
+    font-family: var(--fonte-primaria);
+    color: var(--branco-sedundario);
+    font-size: 1.6rem;
+}
+
+.cabecalho__links {
+    margin-top: 1.2rem;
+}
+
+.cabecalho__links a {
+    text-decoration: none;
+    color: var(--branco-sedundario);
+    font-family: var(--fonte-primaria);
+    margin-right: 1.2rem;
+    margin-left: 1.2rem;
+    font-size: 1.2rem;
+}
+
+.banner {
+    width: 100%;
+    max-height: 410px;
+    overflow: visible;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border: 2px solid var(--preto-terciario);
+}
+
+.cardapio {
+    text-align: center;
+    background-color: var(--vermelho-principal);
+    border: 2px solid var(--preto-terciario);
+    margin-top: 9rem;
+    padding-top: 9rem;
+}
+
+.cardapio__titulo {
+    font-family: var(--fonte-primaria);
+    font-size: 2rem;
+    color: var(--branco-sedundario);
+}
+
+.container {
+    background-color: var(--laranja-pastel);
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 0;
+}
+
+.coluna {
+    flex: 1;
+    max-width: 400px;
+}
+
+.coluna__card {
+    background-color: var(--vermelho-principal);
+    text-align: center;
+    border: 2px solid var(--preto-terciario);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 2rem;
+}
+
+.coluna__card__titulo {
+    font-family: var(--fonte-primaria);
+    color: var(--branco-sedundario);
+    font-size: 1.5rem;
+}
+
+.coluna__card__texto {
+    font-family: var(--fonte-secundaria);
+    color: var(--branco-sedundario);
+    font-size: 0.75rem;
+}
+
+.coluna__card__preco {
+    font-family: var(--fonte-primaria);
+    color: var(--branco-sedundario);
+    font-size: 1rem;
+}
+
+.add-to-cart-btn {
+    background-color: var(--laranja-pastel);
+    color: var(--branco-sedundario);
+    border: 2px solid var(--preto-terciario);
+    padding: 0.5rem 1rem;
+    font-family: var(--fonte-primaria);
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.add-to-cart-btn:hover {
+    background-color: var(--vermelho-principal);
+    color: var(--branco-sedundario);
+}
+
+/* Cartão do Pastel na Página do Carrinho */
+.cart-item-card {
+    background-color: var(--vermelho-principal);
+    text-align: center;
+    border: 2px solid var(--preto-terciario);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-right: 30rem;
+    margin-left: 30rem;
+    padding: 1rem;
+    border-radius: 10px; /* Adiciona bordas arredondadas */
+}
+
+.cart-item-card h2 {
+    font-family: var(--fonte-primaria);
+    color: var(--branco-sedundario);
+    font-size: 1.5rem;
+    margin-bottom: 1rem; /* Adiciona espaço abaixo do título */
+}
+
+.cart-item-card img {
+    width: 50%; /* Reduz a largura da imagem */
+    height: auto;
+    margin-bottom: 1rem; /* Adiciona espaço abaixo da imagem */
+}
+
+.cart-item-card p {
+    font-family: var(--fonte-primaria);
+    color: var(--branco-sedundario);
+    font-size: 1rem;
+    font-weight: bold; /* Adiciona negrito ao preço */
+    margin-bottom: 1rem; /* Adiciona espaço abaixo do preço */
+}
+
+/* Botões de Pagar e Esvaziar Carrinho */
+#pagar-btn, #esvaziar-btn {
+    background-color: var(--vermelho-principal);
+    color: var(--branco-sedundario);
+    border: 2px solid var(--preto-terciario);
+    padding: 0.5rem 1rem;
+    font-family: var(--fonte-primaria);
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    margin-top: 1rem; /* Adiciona espaço acima do botão */
+    border-radius: 5px; /* Adiciona bordas arredondadas */
+    display: block; /* Garante que os botões estejam em uma linha separada */
+    margin-bottom: 1rem; /* Adiciona espaço abaixo do botão */
+}
+
+#pagar-btn:hover, #esvaziar-btn:hover {
+    background-color: var(--laranja-pastel);
+    color: var(--branco-sedundario);
+}
+
+/* Centraliza os botões na página */
+#pagar-btn, #esvaziar-btn {
+    margin: 0 auto; /* Centraliza os botões na horizontal */
+    display: block; /* Garante que os botões ocupem toda a largura disponível */
+}
+
+
+.empty-cart-message {
+    color: var(--branco-sedundario);
+    font-family: var(--fonte-primaria);
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 1.2rem;
+}
+
+.rodape {
+    background-color: var(--vermelho-principal);
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    border: 2px solid var(--preto-terciario);
+    padding: 1rem 0;
+}
+
+.rodape__texto {
+    font-family: var(--fonte-primaria);
+    font-size: 1rem;
+    color: var(--branco-sedundario);
+}
+
+@media screen and (max-width: 768px){
+    .banner {
+        max-height: 200px;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .coluna {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+
+    .cardapio {
+        margin-top: 10rem;
+        padding-top: 6rem;
+    }
+}
